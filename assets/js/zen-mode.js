@@ -61,3 +61,10 @@ function _registerZendModeButtonClick(zendModeButton) {
     }
   });
 })();
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log(document.getElementById("TableOfContents"));
+  if (document.getElementById("TableOfContents") == null) {
+      _toogleZenMode(document.getElementById('zen-mode-button'));
+  }
+});
